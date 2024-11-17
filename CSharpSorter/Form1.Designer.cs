@@ -32,11 +32,13 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             menuStrip1 = new MenuStrip();
-            toolStripMenuItem1 = new ToolStripMenuItem();
-            toolStripMenuItem2 = new ToolStripMenuItem();
-            toolStripMenuItem3 = new ToolStripMenuItem();
-            toolStripMenuItem4 = new ToolStripMenuItem();
+            BubbleTab = new ToolStripMenuItem();
+            ShellTab = new ToolStripMenuItem();
+            RadixTab = new ToolStripMenuItem();
+            HeapTab = new ToolStripMenuItem();
+            insertionSortToolStripMenuItem = new ToolStripMenuItem();
             SortChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            QuickSort = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)SortChart).BeginInit();
             SuspendLayout();
@@ -44,40 +46,47 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(24, 24);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1, toolStripMenuItem2, toolStripMenuItem3, toolStripMenuItem4 });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { BubbleTab, ShellTab, RadixTab, HeapTab, insertionSortToolStripMenuItem, QuickSort });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 33);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
-            // toolStripMenuItem1
+            // BubbleTab
             // 
-            toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(116, 29);
-            toolStripMenuItem1.Text = "BubbleSort";
-            toolStripMenuItem1.Click += toolStripMenuItem1_Click;
+            BubbleTab.Name = "BubbleTab";
+            BubbleTab.Size = new Size(116, 29);
+            BubbleTab.Text = "BubbleSort";
+            BubbleTab.Click += toolStripMenuItem1_Click;
             // 
-            // toolStripMenuItem2
+            // ShellTab
             // 
-            toolStripMenuItem2.Name = "toolStripMenuItem2";
-            toolStripMenuItem2.Size = new Size(98, 29);
-            toolStripMenuItem2.Text = "ShellSort";
-            toolStripMenuItem2.Click += toolStripMenuItem2_Click;
+            ShellTab.Name = "ShellTab";
+            ShellTab.Size = new Size(98, 29);
+            ShellTab.Text = "ShellSort";
+            ShellTab.Click += toolStripMenuItem2_Click;
             // 
-            // toolStripMenuItem3
+            // RadixTab
             // 
-            toolStripMenuItem3.Name = "toolStripMenuItem3";
-            toolStripMenuItem3.Size = new Size(130, 29);
-            toolStripMenuItem3.Text = "InsertionSort";
-            toolStripMenuItem3.Click += toolStripMenuItem3_Click;
+            RadixTab.Name = "RadixTab";
+            RadixTab.Size = new Size(104, 29);
+            RadixTab.Text = "RadixSort";
+            RadixTab.Click += toolStripMenuItem3_Click;
             // 
-            // toolStripMenuItem4
+            // HeapTab
             // 
-            toolStripMenuItem4.Name = "toolStripMenuItem4";
-            toolStripMenuItem4.Size = new Size(103, 29);
-            toolStripMenuItem4.Text = "HeapSort";
-            toolStripMenuItem4.Click += toolStripMenuItem4_Click;
+            HeapTab.Name = "HeapTab";
+            HeapTab.Size = new Size(103, 29);
+            HeapTab.Text = "HeapSort";
+            HeapTab.Click += toolStripMenuItem4_Click;
+            // 
+            // insertionSortToolStripMenuItem
+            // 
+            insertionSortToolStripMenuItem.Name = "insertionSortToolStripMenuItem";
+            insertionSortToolStripMenuItem.Size = new Size(130, 29);
+            insertionSortToolStripMenuItem.Text = "InsertionSort";
+            insertionSortToolStripMenuItem.Click += insertionSortToolStripMenuItem_Click;
             // 
             // SortChart
             // 
@@ -96,6 +105,13 @@
             SortChart.TabIndex = 1;
             SortChart.Text = "chart1";
             SortChart.Click += SortChart_Click;
+            // 
+            // QuickSort
+            // 
+            QuickSort.Name = "QuickSort";
+            QuickSort.Size = new Size(106, 29);
+            QuickSort.Text = "QuickSort";
+            QuickSort.Click += QuickSort_Click;
             // 
             // Form1
             // 
@@ -119,10 +135,12 @@
         #endregion
 
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem toolStripMenuItem1;
-        private ToolStripMenuItem toolStripMenuItem2;
-        private ToolStripMenuItem toolStripMenuItem3;
-        private ToolStripMenuItem toolStripMenuItem4;
+        private ToolStripMenuItem BubbleTab;
+        private ToolStripMenuItem ShellTab;
+        private ToolStripMenuItem RadixTab;
+        private ToolStripMenuItem HeapTab;
         private System.Windows.Forms.DataVisualization.Charting.Chart SortChart;
+        private ToolStripMenuItem insertionSortToolStripMenuItem;
+        private ToolStripMenuItem QuickSort;
     }
 }
